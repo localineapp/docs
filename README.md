@@ -1,55 +1,68 @@
-# Mintlify Starter Kit
+<div align="center">
+  <img src="https://github.com/localineapp/web-app/blob/master/.github/branding/logo_with_text.png?raw=true" alt="Localine Logo" width="200"/>
+  
+  [![Mintlify](https://img.shields.io/badge/Built%20with-Mintlify-4F46E5.svg)](https://mintlify.com/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  **An open translation management platform for teams**<br>
+  **Simple, fast, and developer-friendly.**
+</div>
 
-Use the starter kit to get your docs deployed and ready to customize.
+---
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+This repository contains the official documentation for [Localine](https://github.com/localineapp/web-app), an open-source translation management platform for teams.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+The documentation is built using [Mintlify](https://mintlify.com) and is hosted at [localine.mintlify.com](https://localine.mintlify.com).
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+---
 
-## AI-assisted writing
+## 🚀 Development
 
-Set up your AI coding tool to work with Mintlify:
+To preview the documentation locally, you need to install the [Mintlify CLI](https://www.npmjs.com/package/mint).
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
 
 ```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+### Local Preview
 
-```
+Run the following command at the root of this repository:
+
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+The documentation will be available at `http://localhost:3000`.
 
-## Publishing changes
+---
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## 📁 Structure
 
-## Need help?
+- `docs.json`: Configuration for the documentation (navigation, theme, etc.).
+- `index.mdx`: The homepage of the documentation.
 
-### Troubleshooting
+---
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+## 🤝 Contributing
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Contributions to the documentation are welcome! If you find a typo, outdated information, or want to add a new guide:
+
+1. [Fork](https://github.com/localineapp/docs/fork) the repository
+2. Clone your fork (`git clone https://github.com/your-username/localine-docs.git`)
+3. Create a branch for your changes (`git checkout -b typo/getting-started`)
+4. Commit your changes (`git commit -m 'typo: fix typo in getting-started page'`)
+5. Push to the branch (`git push origin typo/getting-started`)
+6. Submit a Pull Request with a clear description of your improvements.
+
+---
+
+## 📝 License
+
+This documentation is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
