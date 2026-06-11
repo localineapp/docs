@@ -12,7 +12,7 @@
 
 This repository contains the official documentation for [Localine](https://github.com/localineapp/web-app), an open-source translation management platform for teams.
 
-The documentation is built using [Mintlify](https://mintlify.com) and is hosted at [localine.mintlify.com](https://localine.mintlify.com).
+The documentation is built using [Mintlify](https://mintlify.com) and is hosted at [localine.mintlify.app](https://localine.mintlify.app).
 
 ---
 
