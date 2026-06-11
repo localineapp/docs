@@ -59,5 +59,8 @@
   },
   "fonts": {
     "family": "Geist"
+  },
+  "metadata": {
+    "timestamp": true
   }
 }
