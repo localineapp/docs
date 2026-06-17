@@ -46,7 +46,10 @@ The documentation will be available at `http://localhost:3000`.
 ## 📁 Structure
 
 - `docs.json`: Configuration for the documentation (navigation, theme, etc.).
-- `index.mdx`: The homepage of the documentation.
+- `index.mdx`: The introduction page for the documentation.
+- `changelog.mdx`: The changelog page listing updates and releases.
+- `installation/*`: Guides related to installation.
+- `configuration/*`: Guides related to configuration.
 
 ---
 

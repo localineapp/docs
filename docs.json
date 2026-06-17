@@ -3,18 +3,33 @@
   "theme": "palm",
   "name": "LocalineApp",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#3FBB60",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "pages": [
       {
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart"
+          "changelog"
+        ]
+      },
+      {
+        "group": "Installation",
+        "pages": [
+          "installation/standalone",
+          "installation/docker",
+          "installation/kubernetes"
+        ]
+      },
+      {
+        "group": "Configuration",
+        "pages": [
+          "configuration/environment-variables",
+          "configuration/social-logins"
         ]
       }
     ]
@@ -24,16 +39,10 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Visit on GitHub",
+      "href": "https://github.com/localineapp/web-app"
     }
   },
   "contextual": {
