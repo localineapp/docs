@@ -4,4 +4,101 @@ description: "Instructions for configuring environment variables"
 icon: "settings"
 ---
 
-Coming Soon!
+## `APP_NAME`
+
+The `APP_NAME` environment variable is used to specify the name of your application. This name may be displayed in various parts of the user interface.
+
+You can change the value of `APP_NAME` to your desired application name. For example:
+
+```env
+APP_NAME=MyAwesomeApp
+```
+
+## Database Connection Variables
+
+### `DATABASE_HOST`
+
+The `DATABASE_HOST` environment variable is used to specify the hostname or IP address of your database server.
+
+```env
+DATABASE_HOST=localhost
+```
+
+### `DATABASE_PORT`
+
+The `DATABASE_PORT` environment variable is used to specify the port on which your database server is listening.
+
+```env
+DATABASE_PORT=3306
+```
+
+### `DATABASE_USER`
+
+The `DATABASE_USER` environment variable is used to specify the username for connecting to your database.
+
+```env
+DATABASE_USER=localine_user
+```
+
+### `DATABASE_PASSWORD`
+
+The `DATABASE_PASSWORD` environment variable is used to specify the password for connecting to your database.
+
+```env
+DATABASE_PASSWORD=securepassword123
+```
+
+### `DATABASE_NAME`
+
+The `DATABASE_NAME` environment variable is used to specify the name of the database you want to connect to.
+
+```env
+DATABASE_NAME=localine_database
+```
+
+## BetterAuth Variables
+
+We use BetterAuth for authentication in our application. The following environment variables are used to configure BetterAuth:
+
+### `BETTER_AUTH_SECRET`
+
+The `BETTER_AUTH_SECRET` environment variable is used to specify a secret key for authentication purposes. This key should be a long, random string to ensure the security of your application.
+
+```env
+BETTER_AUTH_SECRET=your-very-secure-secret-key-here
+```
+
+<Warning title="Security Tip">
+  Keep your `BETTER_AUTH_SECRET` secure and do not share it publicly, as it is used to sign authentication tokens and protect user data.
+</Warning>
+
+### `BETTER_AUTH_URL`
+
+The `BETTER_AUTH_URL` environment variable is used to specify the URL for the authentication service.
+
+```env
+BETTER_AUTH_URL="http://localhost:3000"
+```
+
+## Configuration Variables
+
+### `DISABLE_SIGNUP`
+
+The `DISABLE_SIGNUP` environment variable is used to disable the signup functionality in your application. Set it to `true` to disable signup, or `false` to allow users to create accounts.
+
+```diff
+- DISABLE_SIGNUP=false
++ DISABLE_SIGNUP=true
+```
+
+### `API_KEYS_LIMIT`
+
+The `API_KEYS_LIMIT` environment variable is used to specify the maximum number of API keys that can be created for a user. Set it to a positive integer value to enforce this limit.
+
+```env
+API_KEYS_LIMIT=5
+```
+
+## Social Login Variables
+
+See more details about configuring social login in the [Social Login documentation](./social-logins).

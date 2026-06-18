@@ -4,4 +4,81 @@ description: "Instructions for configuring social login options"
 icon: "users"
 ---
 
-Coming Soon!
+## Discord
+
+<Steps>
+  <Step title="Create a Discord Application">
+    1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+    2. Click on "New Application" and give it a name.
+  </Step>
+
+  <Step title="Configure OAuth2">
+    1. In your application settings, navigate to the "OAuth2" tab.
+    2. Under "Redirects", add the following URL:
+
+    ```
+    https://yourdomain.com/api/auth/callback/discord
+    ```
+
+    Replace `yourdomain.com` with your actual domain name where the application is hosted.
+  </Step>
+
+  <Step title="Get Client ID and Secret">
+    In the "OAuth2" tab, you will find your Client ID and Client Secret. Keep these values handy as you will need them in the next step.
+
+    <Tip title="Important">
+      Discord doesn't show your Client Secret after creating your application. So you need to reset it in order to get the value.
+      Make sure to copy and save it securely, as you won't be able to retrieve it again.
+    </Tip>
+  </Step>
+
+  <Step title="Configure the application">
+    Update your application's configuration file (e.g., `.env`) with the following values:
+
+    ```env
+    DISCORD_CLIENT_ID=your_discord_client_id
+    DISCORD_CLIENT_SECRET=your_discord_client_secret
+    ```
+
+    Replace `your_discord_client_id` and `your_discord_client_secret` with the values you obtained from the Discord Developer Portal.
+  </Step>
+</Steps>
+
+## GitHub
+
+<Steps>
+  <Step title="Create a GitHub OAuth App">
+    1. Go to the [GitHub Developer Settings](https://github.com/settings/applications/new).
+    2. Fill in the required fields, including the "Application name" and "Homepage URL".
+    3. Under "Authorization callback URL", add the following URL:
+
+    ```
+    https://yourdomain.com/api/auth/callback/github
+    ```
+
+    Replace `yourdomain.com` with your actual domain name where the application is hosted.
+  </Step>
+
+  <Step title="Get Client ID and generate Client Secret">
+    After creating the OAuth App, you will see your Client ID on the app's page. To generate a Client Secret, click on "Generate a new client secret" and copy the generated value.
+
+    <Tip title="Important">
+      Make sure to keep your Client Secret secure and do not share it publicly.
+    </Tip>
+  </Step>
+
+  <Step title="Configure the application">
+    Update your application's configuration file (e.g., `.env`) with the following values:
+
+    ```env
+    GITHUB_CLIENT_ID=your_github_client_id
+    GITHUB_CLIENT_SECRET=your_github_client_secret
+    ```
+
+    Replace `your_github_client_id` and `your_github_client_secret` with the values you obtained from the GitHub Developer Settings.
+  </Step>
+</Steps>
+
+## Google
+
+Coming soon!
